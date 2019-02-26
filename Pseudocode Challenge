@@ -32,15 +32,14 @@
 
     FOR ("pakaian" less than 21)
 
-        DISPLAY "pakaian"
-
         IF ("pakaian" equal 20)
             SET "mesin_cuci" with 'Mesin cuci dinyalakan'
 
             DISPLAY "mesin_cuci"
+        
+        DISPLAY "pakaian"
 
-        "pakaian" equal "pakaian" add by 1 
-
+        "pakaian" add by 1 
 
 
 4.  Periksa Kuku
@@ -61,4 +60,4 @@
 
             DISPLAY "Hasil_siswa"
 
-        "siswa" equal "siswa" add by 1 
+        "siswa" add by 1 
