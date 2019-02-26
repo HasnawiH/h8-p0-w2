@@ -1,8 +1,8 @@
 1.  Newton Second Law
    
     STORE "massa" with 600
-	STORE "kecepatan" with 2
-	STORE "Hasil"
+    STORE "kecepatan" with 2
+    STORE "Hasil"
 
 	SET "Hasil" equal "massa" times "kecepatan"
 
@@ -11,8 +11,10 @@
     
 2.  Tahun Kabisat
 
-    STORE "tahun" with any years
+    STORE "tahun"
     STORE "hasil_tahun" 
+
+    INPUT "tahun" with any years
 
     IF (("tahun" mod 4 equal 0) AND ("tahun" mod 100 not equal 0))    OR    (("tahun" mod 4 not equal 0) AND ("tahun" mod 100 equal 0)) 
         SET "hasil_tahun" equal 'Ini adalah Tahun Kabisat'
@@ -27,7 +29,7 @@
 
     STORE "pakaian" with 1
     STORE "mesin_cuci" 
-    
+
     FOR ("pakaian" less than 21)
 
         DISPLAY "pakaian"
