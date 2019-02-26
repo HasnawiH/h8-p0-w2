@@ -1,0 +1,62 @@
+1.  Newton Second Law
+   
+    STORE "massa" with 600
+	STORE "kecepatan" with 2
+	STORE "Hasil"
+
+	SET "Hasil" equal "massa" times "kecepatan"
+
+    DISPLAY "Hasil"
+
+    
+2.  Tahun Kabisat
+
+    STORE "tahun" with any years
+    STORE "hasil_tahun" 
+
+    IF (("tahun" mod 4 equal 0) AND ("tahun" mod 100 not equal 0))    OR    (("tahun" mod 4 not equal 0) AND ("tahun" mod 100 equal 0)) 
+        SET "hasil_tahun" equal 'Ini adalah Tahun Kabisat'
+
+        DISPLAY "hasil_tahun"
+
+    ELSE 
+        DISPLAY "hasil_tahun" equal 'Ini bukan Tahun Kabisat'
+
+
+3.  Laundry Day
+
+    STORE "pakaian" with 1
+    STORE "mesin_cuci" 
+    
+    FOR ("pakaian" less than 21)
+
+        DISPLAY "pakaian"
+
+        IF ("pakaian" equal 20)
+            SET "mesin_cuci" with 'Mesin cuci dinyalakan'
+
+            DISPLAY "mesin_cuci"
+
+        "pakaian" equal "pakaian" add by 1 
+
+
+
+4.  Periksa Kuku
+
+    STORE "siswa" with 1
+    STORE "kuku"  with 'panjang'
+    STORE "Hasil_siswa"
+
+    FOR ("siswa" less than 41)
+
+        IF("kuku" equal 'panjang')
+            SET "Hasil_siswa" equal 'Guru menghukum'
+            
+            DISPLAY "Hasil_siswa"
+
+        ELSE 
+            SET "Hasil_siswa" equal 'Guru memuji'
+
+            DISPLAY "Hasil_siswa"
+
+        "siswa" equal "siswa" add by 1 
