@@ -11,10 +11,8 @@
     
 2.  Tahun Kabisat
 
-    STORE "tahun"
+    STORE "tahun" with any years
     STORE "hasil_tahun" 
-
-    INPUT "tahun" with any years
 
     IF (("tahun" mod 4 equal 0) AND ("tahun" mod 100 not equal 0))    OR    (("tahun" mod 4 not equal 0) AND ("tahun" mod 100 equal 0)) 
         SET "hasil_tahun" equal 'Ini adalah Tahun Kabisat'
