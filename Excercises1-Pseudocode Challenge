@@ -14,7 +14,7 @@
     STORE "tahun" with any years
     STORE "hasil_tahun" 
 
-    IF (("tahun" mod 4 equal 0) AND ("tahun" mod 100 not equal 0))    OR    (("tahun" mod 4 not equal 0) AND ("tahun" mod 100 equal 0)) 
+    IF "tahun" mod 4 equal 0 AND "tahun" mod 100 not equal 0     OR     "tahun" mod 4 not equal 0 AND "tahun" mod 100 equal 0 
         SET "hasil_tahun" equal 'Ini adalah Tahun Kabisat'
 
         DISPLAY "hasil_tahun"
@@ -28,9 +28,9 @@
     STORE "pakaian" with 1
     STORE "mesin_cuci" 
 
-    FOR ("pakaian" less than 21)
+    FOR "pakaian" less than 21
 
-        IF ("pakaian" equal 20)
+        IF "pakaian" equal 20
             SET "mesin_cuci" with 'Mesin cuci dinyalakan'
 
             DISPLAY "mesin_cuci"
@@ -46,9 +46,9 @@
     STORE "kuku"  with 'panjang'
     STORE "Hasil_siswa"
 
-    FOR ("siswa" less than 41)
+    FOR "siswa" less than 41
 
-        IF("kuku" equal 'panjang')
+        IF "kuku" equal 'panjang'
             SET "Hasil_siswa" equal 'Guru menghukum'
             
             DISPLAY "Hasil_siswa"
