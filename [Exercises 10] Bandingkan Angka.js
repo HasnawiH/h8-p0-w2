@@ -1,13 +1,15 @@
 function bandingkanAngka(angka1, angka2) {
+    var output=''
     if (angka1<angka2){
-        console.log('true')
+        output += 'true'
     }else if(angka1===angka2){
-        console.log('-1')
+        output += '-1'
     }
     else{
-        console.log('false')
+        output += 'false'
     }
-  }
+    return output
+}
   
   // TEST CASES
   console.log(bandingkanAngka(5, 8)); // true
